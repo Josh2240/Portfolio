@@ -1,0 +1,753 @@
+@import url('sass/styles.scss');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --accent-color: #444444;
+    --white: #ffffff;
+    --black: #191919;
+    --dark-gray: #292728;
+    --blue: #48b5f0;
+    --coffee: #a67c52;
+}
+body{
+    background-image: url('assets/icons/photos/Josh\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: arial, sans-serif;
+    overflow-x: hidden;
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+.introduction{
+    height: 295px;
+    width: 90%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.introduction p{
+    color: var(--white);
+    display: flex;
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+    margin: 0 520px 0 0;
+    position: absolute;
+    top: 80%;
+}
+#homenav{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    left: 60%;
+    top: 80%;
+    gap: 15px;
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1080px){
+    .introduction{
+        width: 94%;
+        top: 32%;
+        left: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 35%;
+    }
+    #homenav{
+        font-weight: 200;
+        font-size: .8rem;
+        right:5%;
+        top: 80%;
+    }
+    .introduction p{
+        position: absolute;
+        top: 80%;
+        text-align: center;
+        font-size: .9rem;
+    }
+}
+/*responsive for iphone 7 plus*/
+@media only screen and (min-width:414px) and (max-width: 736px){
+    .introduction{
+        height: 20%;
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 1%;
+        position: absolute;
+    }
+    .introduction #name{
+        font-size: 2rem;
+         margin: 0;
+        top: 10%;
+    }
+    #homenav{
+        font-weight: 200;
+        font-size: .5rem;
+        right: 25%;
+    }
+    .introduction p{
+        margin: -100px 0 0 90px;
+        position: relative;
+        top: 50px;
+        left: -15%;
+        width: 100%;
+        text-align: center;
+        font-size: .5em;
+    }
+}
+/*todo: about section*/
+.about{
+    background-image: url('assets/icons/photos/Josh\ -\ no\ text.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: arial, sans-serif;
+    position: relative;
+}
+header{
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+h2{
+    font-family: arial, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white);
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 2%;
+    position: absolute;
+}
+#list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: absolute;
+    gap: 20px;
+    left: 70%;
+    top: 30%;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+main .about1{
+    background-color: transparent;
+    top: 10px;
+    left: 0;
+    height: 70vh;
+    position: relative;
+}
+main .about1 #myphoto{
+    height: 90%;
+    width: auto;
+    top: 5%;
+    left: 20px;
+    position: absolute;
+}
+main .about1 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-shadow: none;
+    top: 20%;
+    left: 2%;
+    font-size: 3rem;
+}
+main .about1 p{
+    color: var(--white);
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 4%;
+    margin: 0 10px;
+    word-break: break-all;
+    width: auto;
+}
+main .skills h3{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    font-size: 1.7rem;
+}
+ul li{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+}
+#skill1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 43.2%;
+}
+#skill2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    left: 43.2%;
+}
+#skill3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50.5%;
+}
+#skill4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    left: 51.5%;
+}
+#skill5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+}
+#skill6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+}
+.about2{
+    height: 70vh;
+    width: 100%;
+    top: 98%;
+    position: absolute;
+}
+#primary h3{
+    color: var(--white);
+    top: 20%;
+    position: absolute;
+    left: 5%;
+    font-size: 1.5rem;
+}
+#primary p{
+    color: var(--white);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#secondary h3{
+    color: var(--white);
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+#secondary #assatt{
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+#secondary #pclu-shs{
+    color: var(--white);
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+#tertiary h3{
+    color: var(--white);
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+#tertiary p{
+    color: var(--white);
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+
+
+/*responsive*/
+@media screen and (min-width: 768px) and (max-width: 1080px){
+    header{
+        width: 100%;
+        height: 70px;
+    }
+    h2{
+        font-size: 2.5em;
+        top: 2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: absolute;
+    }
+    #list{
+        font-size: .7em;
+        position: absolute;
+        right: 20%;
+    }
+    main{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    main .about1{
+        position: relative;
+    }
+    main .about1 h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 10%;
+        left: 10%;
+        font-size: 1.5rem;
+    }
+    main .about1 #myphoto{
+        height: 60%;
+        top: 10px;
+        left: 0;
+        display: block;
+    }
+    main .about1 p{
+        font-size: .7em;
+        position: relative;
+        left: 13%;
+        top: 10%;
+    }
+    ul li{
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 80%;
+    }
+    main .skills h3{
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        font-size: 1.2rem;
+    }
+    #skill1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 48%;
+        left: 43.2%;
+        font-size: .5em;
+    }
+    #skill2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 55%;
+        left: 43.2%;
+        font-size: .5em;
+    }
+    #skill3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 48%;
+        left: 50.5%;
+        font-size: .5em;
+    }
+    #skill4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 55%;
+        left: 51.5%;
+        font-size: .5em;
+    }
+    #skill5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 48%;
+        left: 60%;
+        font-size: .5em;
+    }
+    #skill6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 55%;
+        left: 60%;
+        font-size: .5em;
+    }
+    
+    /* Responsive styles for new about2 sections */
+    .about2{
+        height: 60vh;
+        width: 100%;
+        top: 90%;
+        position: absolute;
+    }
+    #primary h3{
+        color: var(--white);
+        top: 15%;
+        position: absolute;
+        left: 5%;
+        font-size: 1.2rem;
+    }
+    #primary p{
+        color: var(--white);
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        font-size: 0.9rem;
+    }
+    #secondary h3{
+        color: var(--white);
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        font-size: 1.2rem;
+    }
+    #secondary #assatt{
+        color: var(--white);
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        font-size: 0.9rem;
+    }
+    #secondary #pclu-shs{
+        color: var(--white);
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        font-size: 0.9rem;
+    }
+    #tertiary h3{
+        color: var(--white);
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        font-size: 1.2rem;
+    }
+    #tertiary p{
+        color: var(--white);
+        position: absolute;
+        top: 75%;
+        left: 10%;
+        font-size: 0.9rem;
+    }
+
+}
+@media only screen and (min-width: 414px) and (max-width: 736px){
+    header{
+        height: 70px;
+        width: 100%;
+    }
+    h2{
+        font-size: 1.5em;
+        top: 2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: absolute;
+    }
+    #list{
+        font-size: .5em;
+        position: absolute;
+        right: 20%;
+        gap: 10px;
+        top: 7%;
+        margin-top: 10px;
+        position: absolute;
+    }
+    main{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    main .about1{
+        position: relative;
+        background-color: transparent;
+        height: 30%;
+        width: 100%;
+    }
+    main .about1 h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 15%;
+        font-size: .9em;
+    }
+    main .about1 p{
+        font-size: .5em;
+        position: relative;
+        left: 14%;
+        top: 0;
+        font-size: .4em;
+    }
+    main .about1 #myphoto{
+        height: 60%;
+        top: 15%;
+        display: block;
+        left: 5px;
+    }
+    ul li{
+        margin-top: 10%;
+    }
+    main .skills h3{
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 20%;
+        margin-top: 7%;
+        left: 60%;
+    }
+    #skill1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-size: .5em;
+        top: 30%;
+    }
+    #skill2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-size: .5em;
+        top: 38%;
+    }
+    #skill3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-size: .5em;
+        top: 30%;
+        left: 60%;
+    }
+    #skill4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 38%;
+        left: 62%;
+        font-size: .5em;
+    }
+    #skill5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+        left: 79%;
+        font-size: .5em;
+    }
+    #skill6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 38%;
+        left: 79%;
+        font-size: .5em;
+    }
+    /*todo: about2 section*/
+}
+
+/*todo: resume page*/
+main .resume{
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 80%;
+    height: 140vh;
+    background-color: var(--coffee);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border: var(--black) 2px solid;
+    border-radius: 10px;
+    position: absolute;
+}
+.resumeHeader{
+    background-color: var(--dark-gray);
+    height: 15%;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 4%;
+    left: 5%;
+    border-radius: 50px;
+}
+.circleInsideImage{
+    background-color: var(--white);
+    height: 103%;
+    width: 16%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -4%;
+}
+.resumeHeader img{
+    height: 100%;
+    width: 15%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+.circleInsideImage img{
+    height: 90%;
+    width: 89%;
+    object-fit: cover;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: var(--dark-gray) 4px solid;
+}
+.resumeHeader strong{
+    color: var(--white);
+    font-size: 3.5rem;
+    position: absolute;
+    top: 10%;
+    font-weight: 800;
+    text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+.resumeHeader span{
+    color: var(--white);
+    font-size: 1.2em;
+    position: absolute;
+    top: 65%;
+}
+.sidebar{
+    background-color: var(--dark-gray);
+    height: 70%;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*todo: works page*/
+.scanTrack{
+    background-color: var(--white);
+    height: 50vh;
+    width: 50%;
+    top: 8%;
+    left: 2%;
+    position: absolute;
+}
+.scanTrack #scanTrack{
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    display: block;
+}
+.description1{
+    background-color: transparent;
+    border: var(--white) 1px solid;
+    border-radius: 2px;
+    height: 50vh;
+    width: 45%;
+    align-content: center;
+    top: 8%;
+    right: 1%;
+    position: absolute;
+}
+.contactInfo{
+    background-color: transparent;
+    border: var(--white) 1px solid;
+    height: 30%;
+    width: 85%;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5%;
+    left: 5%;
+}
+.contactInfo img{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    height: 24px;
+}
+.contactInfo span{
+    color: var(--white);
+    position: absolute;
+    top: 11%;
+    left: 23%;
+    font-size: 1em;
+}
+.contactInfo #email{
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    height: 20px;
+}
+.contactInfo #span1{
+    
+}
